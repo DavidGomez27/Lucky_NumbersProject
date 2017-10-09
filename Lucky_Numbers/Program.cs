@@ -27,11 +27,9 @@ namespace Lucky_Numbers
 
                 int highNum = int.Parse(Console.ReadLine());
 
-                while (highNum <= lowNum)
-                {
-                    Console.WriteLine("second number must be greater than your first");
-                }
+               
 
+                
                 Console.WriteLine("Now pick your 6 numbers");
 
 
@@ -89,8 +87,7 @@ namespace Lucky_Numbers
 
 
 
-
-
+                //did the decimal numbers to multiply by starting with 1000000 diveded by 6 then 5 and so on and so on
 
                 if (matchedNumber == 6)
                 {
@@ -126,7 +123,7 @@ namespace Lucky_Numbers
 
 
                 Console.WriteLine("Would you like to play again? Type \"yes\" or \"no\"");
-                playAgain = Console.ReadLine().ToLower();
+                playAgain = Console.ReadLine().ToLower().Trim();
             }
             while (playAgain == "yes");
           if (playAgain == "no")
