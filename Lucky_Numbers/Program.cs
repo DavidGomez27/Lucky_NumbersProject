@@ -129,7 +129,10 @@ namespace Lucky_Numbers
                 playAgain = Console.ReadLine().ToLower();
             }
             while (playAgain == "yes");
-          
+          if (playAgain == "no")
+            {
+                Console.WriteLine("Thanks for playing.");
+            }
 
             
            
